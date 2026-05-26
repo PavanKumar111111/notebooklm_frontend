@@ -10,7 +10,7 @@ export default function PDFViewer({ uploaded }) {
       import.meta.env.VITE_BACKEND_URL ||
       "https://notebooklm-backend-ekfo.onrender.com";
 
-    // Append a timestamp to force reload (important)
+    // Load the REAL PDF — not extracted page text
     setPdfUrl(`${backendUrl}/pdf-file?t=${Date.now()}`);
   }, [uploaded]);
 
@@ -38,7 +38,7 @@ export default function PDFViewer({ uploaded }) {
         height="100%"
         style={{ border: "none" }}
         title="PDF Viewer"
-      />
+      ></iframe>
     </div>
   );
 }
