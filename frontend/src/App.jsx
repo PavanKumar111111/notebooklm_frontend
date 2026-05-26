@@ -12,7 +12,7 @@ export default function App() {
     if (!file) return alert("Select a PDF first");
     const fd = new FormData();
     fd.append("file", file);
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://notebooklm-backend-ekfo.onrender.com";
     const res = await fetch(`${backendUrl}/upload`, { method: "POST", body: fd });
     const data = await res.json();
     if (data.ok) setUploaded(true);
