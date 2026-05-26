@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.app { padding: 20px; }
+.header { }
+.controls { margin-bottom: 12px; }
+.main { display: flex; gap: 12px; }
+.left { width: 55%; }
+.right { width: 45%; }
+.pdf-viewer { border: 1px solid #ddd; padding: 8px; height: 600px; overflow: auto; }
+.pdf-text { white-space: pre-wrap; }
+.chatbox { border: 1px solid #ddd; padding: 8px; height: 600px; display: flex; flex-direction: column; }
+.messages { flex: 1; overflow: auto; }
+.user .bubble { text-align: right; background: #e6f7ff; padding: 6px; margin: 6px; border-radius: 6px; }
+.bot .bubble { text-align: left; background: #f3f3f3; padding: 6px; margin: 6px; border-radius: 6px; }
+.citations button { margin-right: 6px; }
+.composer { display: flex; gap: 8px; margin-top: 8px; }
+.composer input { flex: 1; padding: 8px; }
